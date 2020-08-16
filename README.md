@@ -1,6 +1,12 @@
 # Love-Beauty-APP
 
-A new Flutter project.
+This application makes up my undergraduate work, i build this application with the framework Flutter, where the user can select which service the establishment offers and details such as: price, average time, professional who performs.
+
+## Take a look at the application
+![Alt Text](https://media.giphy.com/media/hvMnb5THYCPJsK7Nic/giphy.gif)
+
+
+
 
 ## Getting Started
 
