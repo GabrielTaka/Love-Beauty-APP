@@ -1,0 +1,51 @@
+import 'dart:io';
+import 'package:GraceApp/app_theme.dart';
+import 'package:GraceApp/utils/constants.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+<<<<<<< HEAD
+import 'pages/grace_home_screen.dart';
+=======
+import 'pages/ubeleza_home_screen.dart';
+>>>>>>> master
+
+void main() async {
+  Constants.setEnvironment(Environment.DEV);
+
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations(<DeviceOrientation>[DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
+      .then((_) => runApp(MyApp()));
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+      statusBarBrightness: Platform.isAndroid ? Brightness.dark : Brightness.light,
+      systemNavigationBarColor: Colors.white,
+      systemNavigationBarDividerColor: Colors.grey,
+      systemNavigationBarIconBrightness: Brightness.dark,
+    ));
+
+    return MaterialApp(
+<<<<<<< HEAD
+      title: 'Ubeleza',
+=======
+      title: 'Grace App',
+>>>>>>> master
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        textTheme: AppTheme.textTheme,
+        platform: TargetPlatform.iOS,
+      ),
+<<<<<<< HEAD
+      home: GraceHomeScreen(),
+=======
+      home: UbelezaHomeScreen(),
+>>>>>>> master
+    );
+  }
+}
